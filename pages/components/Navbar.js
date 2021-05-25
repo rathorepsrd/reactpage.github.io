@@ -1,19 +1,16 @@
-import Head from 'next/head'
-// import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
-
-import {Navbar, Nav, NavDropdown, Form, Button, FormControl} from 'react-bootstrap';
+import Head from 'next/head';
 import Link from 'next/link';
+import {Navbar, Nav, NavDropdown, Form, Button, FormControl} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function Home() {
+export default function Navbar() {
   return (
     <>
 <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">Logo</Navbar.Brand>
+  <Navbar.Brand href="/">Logo</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Nav className="ml-5">
-      <Nav.Link href="#home">Works</Nav.Link>
+       <Nav.Link href="#home">Works</Nav.Link>
       <Nav.Link href="#link">Web</Nav.Link>
       <Nav.Link href="#home">App</Nav.Link>
       <Nav.Link href="#link">Branding</Nav.Link>
