@@ -1,0 +1,247 @@
+// //Header CSS Start
+// .navbar {
+//   position: fixed;
+//   top: 30px;
+//   left: 0;
+//   width: 100%;
+//   margin-left: 0;
+//   z-index: 999;
+//   box-sizing: border-box;
+//   background-color: transparent;
+//   padding: 20px !important;
+//   @include transition(all 0.3s ease-in-out);
+
+//   @media only screen and (max-width: 991.98px) {
+//       top: 20px;
+//       padding: 10px 20px !important;
+//   }
+
+//   .navbar-brand-wrap {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//   }
+
+//   .navbar-brand {
+//       width: 250px;
+//       height: 53px;
+//       background-image: url("../../public/images/opentrade-white-logo.svg");
+//       background-repeat: no-repeat;
+//       background-position: center left;
+//       background-repeat: no-repeat;
+//       background-size: 100%;
+//       padding: 0;
+//       @include transition(all 0.3s ease-in-out);
+
+//       @media only screen and (max-width: 767.98px) {
+//           width: 70px;
+//           height: 46px;
+//           background-size: cover;
+//           background-clip: content-box;
+//           padding: 0;
+//       }
+//   }
+
+//   .nav-item {
+//       font-family: $font-family-primary;
+//       font-style: normal;
+//       font-weight: bold;
+//       font-size: 15px;
+//       line-height: 40px;
+//       color: $color-white;
+
+//       @media only screen and (max-width: 991.98px) {
+//           text-align: center;
+//       }
+
+//       .nav-link {
+//           color: $color-white !important;
+//           text-transform: uppercase;
+//           position: relative;
+//           font-weight: 600 !important;
+
+//           &::before,
+//           &::after {
+//               content: '';
+//               position: absolute;
+//               display: block;
+//               left: 0;
+//               top: 10%;
+//               margin: 0 auto;
+//               height: 1px;
+//               background-color: $color-white;
+//               width: 0%;
+//               @include transition(width 0.3s ease-in-out);
+//           }
+
+//           &::after {
+//               top: 90%;
+//           }
+
+//           &:hover,
+//           &:active,
+//           &:hover,
+//           &.active {
+
+//               &::before,
+//               &::after {
+//                   width: 100%;
+//                   @include transition(width 0.3s ease-in-out);
+//               }
+//           }
+
+//           @media only screen and (max-width: 991.98px) {
+
+//               &::before,
+//               &::after {
+//                   display: none;
+//               }
+
+//               color: $color-dark !important;
+//               text-align: center;
+
+//               &:hover,
+//               &:active,
+//               &:hover,
+//               &.active {
+//                   color: $color-primary !important;
+//               }
+//           }
+//       }
+//   }
+
+//   .navbar-toggler {
+//       color: $color-primary;
+//       border-color: $color-white;
+//       opacity: 1;
+//       background-color: $color-white;
+//       padding: 10px;
+
+//       &:focus {
+//           box-shadow: none;
+//       }
+
+//       @media only screen and (max-width: 767.98px) {
+//           font-size: 1rem;
+//       }
+
+//       .navbar-toggler-icon {
+//           background-image: url("../../public/images/close.svg");
+//       }
+
+//       &.collapsed {
+//           .navbar-toggler-icon {
+//               background-image: url("../../public/images/bar.svg");
+//           }
+//       }
+//   }
+
+//   @media only screen and (max-width: 991.98px) {
+//       .navbar-collapse {
+//           background-color: $color-white;
+//       }
+//   }
+
+//   .btn-join-now {
+//       background-color: $color-white;
+//       font-family: $font-family-primary;
+//       font-weight: bold;
+//       font-size: 15px;
+//       line-height: 18px;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       text-align: center;
+//       color: $color-primary !important;
+//       width: 150px;
+//       height: 50px;
+//       margin-left: 10px;
+//       border: 2px solid transparent !important;
+//       box-sizing: border-box;
+
+//       &:hover,
+//       &:focus,
+//       &:active {
+//           color: $color-white !important;
+//           background-color: $color-primary;
+//           border-color: $color-white !important;
+//           box-shadow: none;
+//       }
+
+//       @media only screen and (max-width: 991.98px) {
+//           background-color: $color-primary;
+//           color: $color-white !important;
+//           margin: 0 auto 20px;
+
+//           &:hover,
+//           &:focus,
+//           &:active {
+//               color: $color-primary !important;
+//               background-color: $color-white;
+//               border-color: $color-primary !important;
+//           }
+//       }
+//   }
+
+//   &.mini-menu {
+//       top: 0;
+//       padding: 0;
+//       background-color: $color-white;
+//       @include box-shadow(0 5px 10px rgba(50, 62, 154, 0.15));
+//       @include transition(all 0.3s ease-in-out);
+
+//       .navbar-brand {
+//           background-image: url("../../public/images/opentrade-color-logo.svg");
+//           @include transition(all 0.3s ease-in-out);
+
+//           @media only screen and (max-width: 767.98px) {
+//               width: 66px;
+//               height: 42px;
+//           }
+//       }
+
+//       .navbar-toggler {
+//           @media only screen and (max-width: 767.98px) {
+//               font-size: 0.85rem;
+//           }
+//       }
+
+//       .nav-item {
+//           @media only screen and (min-width: 991.98px) {
+//               .nav-link {
+//                   color: $color-dark !important;
+
+//                   &::before,
+//                   &::after {
+//                       background-color: $color-primary;
+//                   }
+
+//                   &:hover,
+//                   &:active,
+//                   &:hover,
+//                   &.active {
+//                       color: $color-primary !important;
+//                   }
+//               }
+//           }
+//       }
+
+//       .btn-join-now {
+//           @media only screen and (min-width: 991.98px) {
+//               background-color: $color-primary;
+//               color: $color-white !important;
+
+//               &:hover,
+//               &:focus,
+//               &:active {
+//                   color: $color-primary !important;
+//                   background-color: $color-white;
+//                   border-color: $color-primary !important;
+//               }
+//           }
+//       }
+//   }
+// }
+
+// //Header CSS End
+
